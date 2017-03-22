@@ -10,7 +10,7 @@ will become:
 
     C:/blah/blah/blah
 
-OSX/Linux paths will work the same.  This function will also detect the "home" path leader (~/ or ~\) and expand it.
+OSX/Linux paths will work the same.  This function will also detect the "home" path leader (`~/`, `~\`, or `~`) and expand it.
 
 
 ## Installation
