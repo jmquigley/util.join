@@ -23,3 +23,8 @@ test('Testing the normalize alias', t => {
 	let expected = '/one/two/three';
 	t.is(expected, normalize('\\one\\two\\three'));
 });
+
+test('Testing an empty path', t => {
+	t.is('', normalize(''));
+	t.is('', normalize());
+});

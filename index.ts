@@ -13,12 +13,11 @@ import {expandHomeDirectory as expand} from 'util.home';
  * empty string if no arguments are given.
  */
 export function join(...args: string[]) {
-	let s = '';
-	if (args.length > 0) {
-		s = expand(path.join(...args)).trim().replace(/[\\\/]+/g, '/');
+	if (args.join('')) {
+		return expand(path.join(...args)).trim().replace(/[\\\/]+/g, '/');
 	}
 
-	return s;
+	return '';
 }
 
 export let normalize: Function = join;
