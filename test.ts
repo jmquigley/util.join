@@ -2,7 +2,7 @@
 
 import test from 'ava';
 import {home} from 'util.home';
-import {join} from './index';
+import {join, normalize} from './index';
 
 test('Simple join', t => {
 	let expected = '/test/one/two/three';
@@ -11,12 +11,15 @@ test('Simple join', t => {
 
 test('Join using home directory expansion', t => {
 	let expected = `${home}/one/two/three`;
-	let val = join('~/', 'one', 'two', 'three');
-	t.is(expected, val);
+	t.is(expected, join('~/', 'one', 'two', 'three'));
 });
 
 test('Join using windows directory expansion', t => {
 	let expected = `C:/one/two/three`;
-	let val = join('C:\\', 'one', 'two', 'three');
-	t.is(expected, val);
+	t.is(expected, join('C:\\', 'one', 'two', 'three'));
+});
+
+test('Testing the normalize alias', t => {
+	let expected = '/one/two/three';
+	t.is(expected, normalize('\\one\\two\\three'));
 });

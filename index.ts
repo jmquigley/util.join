@@ -20,3 +20,5 @@ export function join(...args: string[]) {
 
 	return s;
 }
+
+export let normalize: Function = join;
