@@ -14,3 +14,9 @@ test('Join using home directory expansion', t => {
 	let val = join('~/', 'one', 'two', 'three');
 	t.is(expected, val);
 });
+
+test('Join using windows directory expansion', t => {
+	let expected = `C:/one/two/three`;
+	let val = join('C:\\', 'one', 'two', 'three');
+	t.is(expected, val);
+});
