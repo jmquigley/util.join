@@ -20,4 +20,4 @@ export function join(...args: string[]) {
 	return '';
 }
 
-export let normalize: Function = join;
+export let normalize = join;
