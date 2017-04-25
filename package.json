@@ -17,7 +17,7 @@
     "node": ">=7.5"
   },
   "dependencies": {
-    "util.home": "0.0.13",
+    "util.home": "0.0.14",
     "util.pkgwrap": "0.0.26"
   },
   "devDependencies": {
