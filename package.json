@@ -1,6 +1,6 @@
 {
   "name": "util.join",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "author": "jmquigley <jmquigley@outlook.com>",
   "description": "Joins and normalizes a file path to a unix path.",
   "private": false,
