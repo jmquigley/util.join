@@ -1,6 +1,12 @@
-# util.join [![Build Status](https://travis-ci.org/jmquigley/util.join.svg?branch=master)](https://travis-ci.org/jmquigley/util.join) [![tslint code style](https://img.shields.io/badge/code_style-TSlint-5ed9c7.svg)](https://palantir.github.io/tslint/) [![Test Runner](https://img.shields.io/badge/testing-ava-blue.svg)](https://github.com/avajs/ava) [![NPM](https://img.shields.io/npm/v/util.join.svg)](https://www.npmjs.com/package/util.join) [![Coverage Status](https://coveralls.io/repos/github/jmquigley/util.join/badge.svg?branch=master)](https://coveralls.io/github/jmquigley/util.join?branch=master)
+# util.join
 
 > Joins and normalizes a file path into a unix path.
+
+[![Build Status](https://travis-ci.org/jmquigley/util.join.svg?branch=master)](https://travis-ci.org/jmquigley/util.join)
+[![tslint code style](https://img.shields.io/badge/code_style-TSlint-5ed9c7.svg)](https://palantir.github.io/tslint/)
+[![Test Runner](https://img.shields.io/badge/testing-jest-blue.svg)](https://facebook.github.io/jest/)
+[![NPM](https://img.shields.io/npm/v/util.join.svg)](https://www.npmjs.com/package/util.join)
+[![Coverage Status](https://coveralls.io/repos/github/jmquigley/util.join/badge.svg?branch=master)](https://coveralls.io/github/jmquigley/util.join?branch=master)
 
 Using the node `path.join()` on Windows results in a backslash path separator.  Using it on OSX or Linux uses a forward slash.  This function is a wrapper that will perform the node join and then normalize all path separators using the forward slash.  e.g. the path:
 
