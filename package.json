@@ -1,6 +1,6 @@
 {
   "name": "util.join",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "author": "jmquigley <jmquigley@outlook.com>",
   "description": "Joins and normalizes a file path to a unix path.",
   "main": "./index.js",
