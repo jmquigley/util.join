@@ -19,7 +19,7 @@
     "node": ">=7.x"
   },
   "dependencies": {
-    "util.home": "0.0.25"
+    "util.home": "0.0.26"
   },
   "devDependencies": {
     "@types/node": "^10.12.18",
@@ -62,7 +62,7 @@
     "all": "yarn install && yarn run build && yarn test",
     "build": "yarn run clean && yarn run lint && pkgwrap --build",
     "clean": "pkgwrap --clean",
-    "coverage": "pkgwrap --coverage",
+    "coverage": "pkgwrap --coverage --jest",
     "lint": "pkgwrap --lint",
     "prepublishOnly": "yarn run all",
     "test": "pkgwrap --testing --jest"
