@@ -1,5 +1,5 @@
-import * as path from 'path';
-import {expandHomeDirectory as expand} from 'util.home';
+import * as path from "path";
+import {expandHomeDirectory as expand} from "util.home";
 
 /**
  * Takes an array of strings that represent a path (when
@@ -13,11 +13,13 @@ import {expandHomeDirectory as expand} from 'util.home';
  * empty string if no arguments are given.
  */
 export function join(...args: string[]) {
-	if (args.join('')) {
-		return expand(path.join(...args)).trim().replace(/[\\\/]+/g, '/');
+	if (args.join("")) {
+		return expand(path.join(...args))
+			.trim()
+			.replace(/[\\\/]+/g, "/");
 	}
 
-	return '';
+	return "";
 }
 
 export let normalize = join;
