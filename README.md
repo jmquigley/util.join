@@ -2,12 +2,12 @@
 
 > Joins and normalizes a file path into a unix path.
 
-[![build](https://circleci.com/gh/jmquigley/util.join/tree/master.svg?style=shield)](https://circleci.com/gh/jmquigley/util.join/tree/master)
+[![build](https://github.com/jmquigley/util.join/workflows/build/badge.svg)](https://github.com/jmquigley/util.join/actions)
 [![analysis](https://img.shields.io/badge/analysis-tslint-9cf.svg)](https://palantir.github.io/tslint/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![testing](https://img.shields.io/badge/testing-jest-blue.svg)](https://facebook.github.io/jest/)
 [![NPM](https://img.shields.io/npm/v/util.join.svg)](https://www.npmjs.com/package/util.join)
-[![Coverage Status](https://coveralls.io/repos/github/jmquigley/util.join/badge.svg?branch=master)](https://coveralls.io/github/jmquigley/util.join?branch=master)
+
 
 Using the node `path.join()` on Windows results in a backslash path separator.  Using it on OSX or Linux uses a forward slash.  This function is a wrapper that will perform the node join and then normalize all path separators using the forward slash.  e.g. the path:
 

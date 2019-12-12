@@ -1,7 +1,7 @@
 "use strict";
 
-import {home} from "util.home";
-import {join, normalize} from "./index";
+import { home } from "util.home";
+import { join, normalize } from "./index";
 
 test("Simple join", () => {
 	const expected = "/test/one/two/three";
