@@ -1,5 +1,5 @@
 import * as path from "path";
-import { expandHomeDirectory as expand } from "util.home";
+import {expandHomeDirectory as expand} from "util.home";
 
 /**
  * Takes an array of strings that represent a path (when
